@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Level Up: Game Shop - Downloads</title>
+<meta name="description" content="Latest playtest builds of Level Up: Game Shop for Windows, Linux and Android.">
+<meta property="og:title" content="Level Up: Game Shop">
+<meta property="og:description" content="Latest playtest builds for Windows, Linux and Android.">
+<style>
+	:root {
+		--bg: #0c0e13;
+		--card: #151922;
+		--card-hi: #1b2029;
+		--line: #262c39;
+		--text: #e9ecf3;
+		--muted: #8a93a6;
+		--accent: #4ade80;
+		--accent-dim: #1d5c38;
+		--warn: #ffb347;
+		--radius: 14px;
+	}
+	* { box-sizing: border-box; }
+	html { color-scheme: dark; }
+	body {
+		margin: 0;
+		min-height: 100vh;
+		background:
+			radial-gradient(900px 480px at 50% -160px, #1d2740 0%, rgba(29, 39, 64, 0) 70%),
+			var(--bg);
+		color: var(--text);
+		font: 15px/1.55 ui-sans-serif, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+		-webkit-font-smoothing: antialiased;
+		padding: 0 20px 64px;
+	}
+	.wrap { max-width: 720px; margin: 0 auto; }
+
+	header { padding: 64px 0 28px; text-align: center; }
+	h1 {
+		margin: 0;
+		font-size: clamp(28px, 6vw, 40px);
+		font-weight: 800;
+		letter-spacing: -0.02em;
+	}
+	h1 .up { color: var(--accent); }
+	.tagline { margin: 10px 0 0; color: var(--muted); }
+	.pills { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; margin-top: 18px; }
+	.pill {
+		display: inline-flex; align-items: center; gap: 6px;
+		padding: 5px 11px; border-radius: 999px;
+		background: var(--card); border: 1px solid var(--line);
+		font-size: 12.5px; color: var(--muted);
+	}
+	.pill b { color: var(--text); font-weight: 600; }
+
+	.banner {
+		display: none;
+		align-items: center; gap: 10px;
+		margin: 0 0 22px;
+		padding: 12px 16px;
+		border-radius: var(--radius);
+		background: rgba(255, 179, 71, 0.09);
+		border: 1px solid rgba(255, 179, 71, 0.32);
+		color: var(--warn);
+		font-weight: 600;
+	}
+	.banner.show { display: flex; }
+
+	.cards { display: grid; gap: 14px; }
+	.card {
+		display: flex; align-items: center; gap: 16px;
+		padding: 18px;
+		background: var(--card);
+		border: 1px solid var(--line);
+		border-radius: var(--radius);
+		transition: border-color .15s ease, background .15s ease;
+	}
+	.card:hover { border-color: #37405280; background: var(--card-hi); }
+	.card.yours { border-color: var(--accent-dim); }
+	.icon { flex: none; width: 40px; height: 40px; color: var(--muted); }
+	.icon svg { width: 100%; height: 100%; fill: currentColor; display: block; }
+	.card.yours .icon { color: var(--accent); }
+	.info { flex: 1 1 auto; min-width: 0; }
+	.name { font-weight: 700; font-size: 16px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+	.tag {
+		font-size: 11px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase;
+		padding: 3px 8px; border-radius: 999px;
+	}
+	.tag.update { background: rgba(255, 179, 71, .14); color: var(--warn); border: 1px solid rgba(255, 179, 71, .35); }
+	.tag.current { background: rgba(74, 222, 128, .12); color: var(--accent); border: 1px solid rgba(74, 222, 128, .3); }
+	.tag.yours { background: #202634; color: var(--muted); border: 1px solid var(--line); }
+	.meta { color: var(--muted); font-size: 13px; margin-top: 4px; }
+	.meta span + span::before { content: " . "; }
+
+	a.dl {
+		flex: none;
+		display: inline-flex; align-items: center; gap: 8px;
+		padding: 10px 18px; border-radius: 10px;
+		background: var(--accent); color: #07130c;
+		font-weight: 700; font-size: 14px; text-decoration: none;
+		border: 1px solid transparent;
+		transition: filter .15s ease;
+	}
+	a.dl:hover { filter: brightness(1.12); }
+	a.dl.secondary { background: transparent; color: var(--text); border-color: var(--line); }
+	a.dl.secondary:hover { border-color: #3a4356; background: var(--card-hi); }
+
+	details.hashes { margin-top: 26px; }
+	details.hashes summary {
+		cursor: pointer; color: var(--muted); font-size: 13px; list-style: none;
+		display: inline-flex; align-items: center; gap: 6px;
+	}
+	details.hashes summary::-webkit-details-marker { display: none; }
+	details.hashes summary::before { content: "+"; font-weight: 700; }
+	details.hashes[open] summary::before { content: "-"; }
+	.hash-row { font-size: 12px; color: var(--muted); margin-top: 10px; word-break: break-all; }
+	.hash-row b { color: var(--text); font-weight: 600; }
+	code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+
+	.notes { margin-top: 34px; color: var(--muted); font-size: 13.5px; }
+	.notes h2 { font-size: 14px; color: var(--text); margin: 0 0 8px; letter-spacing: .02em; }
+	.notes ul { margin: 0; padding-left: 18px; }
+	.notes li { margin: 5px 0; }
+	footer { margin-top: 34px; text-align: center; color: #5d657a; font-size: 12.5px; }
+	footer button {
+		background: none; border: 0; color: inherit; font: inherit;
+		text-decoration: underline; cursor: pointer; padding: 0;
+	}
+	.state { text-align: center; color: var(--muted); padding: 40px 0; }
+
+	@media (max-width: 560px) {
+		.card { flex-wrap: wrap; }
+		a.dl { width: 100%; justify-content: center; }
+	}
+</style>
+</head>
+<body>
+<div class="wrap">
+	<header>
+		<h1>Level <span class="up">Up</span>: Game Shop</h1>
+		<p class="tagline">Playtest builds. Grab one, break it, tell me what broke.</p>
+		<div class="pills" id="pills"></div>
+	</header>
+
+	<div class="banner" id="banner">
+		<span>New build since you last downloaded.</span>
+	</div>
+
+	<div class="state" id="state">Loading builds...</div>
+	<div class="cards" id="cards"></div>
+
+	<details class="hashes" id="hashes" hidden>
+		<summary>Checksums (SHA-256)</summary>
+		<div id="hashlist"></div>
+	</details>
+
+	<div class="notes">
+		<h2>Running it</h2>
+		<ul>
+			<li><b>Windows</b>: unzip anywhere and run the .exe. Keep the .pck and data_ folder next to it. SmartScreen warns because the game is not code signed: More info, then Run anyway.</li>
+			<li><b>Linux</b>: unzip, <code>chmod +x</code> the binary, run it. Same rule about the .pck and data_ folder.</li>
+			<li><b>Android</b>: arm64 phones only, landscape. Your phone will ask permission to install from this browser.</li>
+		</ul>
+	</div>
+
+	<footer>
+		<span id="foot"></span>
+		<button type="button" id="forget">forget my downloads</button>
+	</footer>
+</div>
+
+<script>
+(function () {
+	var STORE = "lugs.downloads";
+	var ICONS = {
+		windows: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.6 5.4 10.4 4.3v7.4H2.6zM11.6 4.1 21.4 2.7v9h-9.8zM2.6 12.9h7.8v7.4L2.6 19.2zM11.6 12.9h9.8v9l-9.8-1.4z"/></svg>',
+		linux: '<svg viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="14.4" rx="6.4" ry="7.3"/><ellipse cx="12" cy="6.6" rx="4.3" ry="4.6"/><ellipse cx="12" cy="16" rx="3.9" ry="5.2" fill="var(--card)"/><path d="M6.6 21.6c-1.1 1.2-3 1.2-3.3.3-.3-.9 1.6-2 3-2.3z" fill="#ffb347"/><path d="M17.4 21.6c1.1 1.2 3 1.2 3.3.3.3-.9-1.6-2-3-2.3z" fill="#ffb347"/><path d="M12 6.1l2.5 1.7-2.5 1.7-2.5-1.7z" fill="#ffb347"/><ellipse cx="10.3" cy="5.7" rx=".85" ry="1.1" fill="var(--card)"/><ellipse cx="13.7" cy="5.7" rx=".85" ry="1.1" fill="var(--card)"/></svg>',
+		android: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9.4h12v7.9c0 .9-.7 1.6-1.6 1.6H7.6c-.9 0-1.6-.7-1.6-1.6z"/><rect x="2.4" y="9.4" width="2.7" height="7.2" rx="1.35"/><rect x="18.9" y="9.4" width="2.7" height="7.2" rx="1.35"/><rect x="8.3" y="17.8" width="2.5" height="4.4" rx="1.25"/><rect x="13.2" y="17.8" width="2.5" height="4.4" rx="1.25"/><path d="M6 8.2c0-2.7 2.7-4.9 6-4.9s6 2.2 6 4.9z"/><path d="M8.3 1.6l1.3 1.9M15.7 1.6l-1.3 1.9" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" fill="none"/><circle cx="9.6" cy="6.3" r=".8" fill="var(--card)"/><circle cx="14.4" cy="6.3" r=".8" fill="var(--card)"/></svg>'
+	};
+
+	var el = function (id) { return document.getElementById(id); };
+
+	function read() {
+		try { return JSON.parse(localStorage.getItem(STORE)) || {}; } catch (e) { return {}; }
+	}
+	function write(map) {
+		try { localStorage.setItem(STORE, JSON.stringify(map)); } catch (e) {}
+	}
+
+	function bytes(n) {
+		if (!n) return "";
+		var mb = n / 1048576;
+		return mb >= 1024 ? (mb / 1024).toFixed(2) + " GB" : mb.toFixed(0) + " MB";
+	}
+
+	function ago(iso) {
+		var then = new Date(iso).getTime();
+		if (isNaN(then)) return "";
+		var secs = Math.round((then - Date.now()) / 1000);
+		var units = [["year", 31536000], ["month", 2592000], ["week", 604800],
+			["day", 86400], ["hour", 3600], ["minute", 60]];
+		var rtf = new Intl.RelativeTimeFormat(undefined, { numeric: "auto" });
+		for (var i = 0; i < units.length; i++) {
+			if (Math.abs(secs) >= units[i][1]) {
+				return rtf.format(Math.round(secs / units[i][1]), units[i][0]);
+			}
+		}
+		return "just now";
+	}
+
+	function full(iso) {
+		var d = new Date(iso);
+		return isNaN(d.getTime()) ? iso : d.toLocaleString();
+	}
+
+	function guessPlatform() {
+		var ua = navigator.userAgent;
+		if (/Android/i.test(ua)) return "android";
+		if (/Windows/i.test(ua)) return "windows";
+		if (/Linux|X11/i.test(ua)) return "linux";
+		return "";
+	}
+
+	function render(data) {
+		var seen = read();
+		var mine = guessPlatform();
+		var order = data.builds.slice().sort(function (a, b) {
+			return (b.platform === mine) - (a.platform === mine);
+		});
+		var stale = 0;
+
+		el("pills").innerHTML =
+			'<span class="pill">version <b>' + data.version + '</b></span>' +
+			'<span class="pill">build <b>' + data.commit + '</b></span>' +
+			'<span class="pill">updated <b title="' + full(data.updated) + '">' + ago(data.updated) + '</b></span>';
+
+		var cards = el("cards");
+		cards.innerHTML = "";
+
+		order.forEach(function (b) {
+			var last = seen[b.platform];
+			var fresh = last && new Date(last).getTime() >= new Date(b.updated).getTime();
+			var outdated = last && !fresh;
+			if (outdated) stale++;
+
+			var card = document.createElement("div");
+			card.className = "card" + (b.platform === mine ? " yours" : "");
+
+			var tag = outdated ? '<span class="tag update">Update available</span>'
+				: fresh ? '<span class="tag current">Up to date</span>'
+				: b.platform === mine ? '<span class="tag yours">Your device</span>' : "";
+
+			card.innerHTML =
+				'<div class="icon">' + (ICONS[b.platform] || "") + '</div>' +
+				'<div class="info">' +
+					'<div class="name">' + b.label + tag + '</div>' +
+					'<div class="meta"><span>' + bytes(b.size) + '</span>' +
+						'<span title="' + full(b.updated) + '">updated ' + ago(b.updated) + '</span>' +
+						(last ? '<span title="' + full(last) + '">you got ' + ago(last) + '</span>' : '') +
+					'</div>' +
+				'</div>';
+
+			var link = document.createElement("a");
+			link.className = "dl" + (fresh ? " secondary" : "");
+			link.href = b.url;
+			link.textContent = outdated ? "Get update" : fresh ? "Download again" : "Download";
+			link.addEventListener("click", function () {
+				var map = read();
+				map[b.platform] = b.updated;
+				write(map);
+				setTimeout(function () { render(data); }, 400);
+			});
+			card.appendChild(link);
+			cards.appendChild(card);
+		});
+
+		el("banner").className = stale ? "banner show" : "banner";
+
+		var list = el("hashlist");
+		list.innerHTML = data.builds.map(function (b) {
+			return '<div class="hash-row"><b>' + b.file + '</b><br><code>' + b.sha256 + '</code></div>';
+		}).join("");
+		el("hashes").hidden = false;
+
+		el("foot").textContent = "Level Up: Game Shop " + data.version + " . ";
+		el("state").style.display = "none";
+	}
+
+	el("forget").addEventListener("click", function () {
+		try { localStorage.removeItem(STORE); } catch (e) {}
+		location.reload();
+	});
+
+	fetch("builds.json?t=" + Date.now(), { cache: "no-store" })
+		.then(function (r) {
+			if (!r.ok) throw new Error(r.status);
+			return r.json();
+		})
+		.then(render)
+		.catch(function () {
+			el("state").textContent = "Could not load the build list. Try again in a minute.";
+		});
+})();
+</script>
+</body>
+</html>
