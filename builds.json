@@ -2,40 +2,40 @@
   "name": "Level Up: Game Shop",
   "version": "0.1.0-beta",
   "commit": "bc5bc79+",
-  "updated": "2026-09-05T10:03:38Z",
+  "updated": "2026-09-05T13:53:09Z",
   "builds": [
     {
       "platform": "windows",
       "label": "Windows",
       "file": "LevelUpGameShop-Windows.zip",
       "url": "https://github.com/LORAY-guy/levelupgameshop-builds/releases/download/latest/LevelUpGameShop-Windows.zip",
-      "size": 97297451,
-      "sha256": "7286d5db357a406f5234ea39f3ac9fd2c2ffbdf5ebbcdf11da68136f710ee53c",
+      "size": 97350928,
+      "sha256": "36ecab298aa20da2f7ef0d52a1bfafdd734ae3a869da9de3319b833ed4a1a592",
       "version": "0.1.0-beta",
       "commit": "bc5bc79+",
-      "updated": "2026-09-05T10:03:38Z"
+      "updated": "2026-09-05T13:53:09Z"
     },
     {
       "platform": "linux",
       "label": "Linux",
       "file": "LevelUpGameShop-Linux.zip",
       "url": "https://github.com/LORAY-guy/levelupgameshop-builds/releases/download/latest/LevelUpGameShop-Linux.zip",
-      "size": 87725086,
-      "sha256": "d5ad52b182705fdffac294eac6746d639e5bbf9054ea8f73cdb51af8a40e2a4f",
+      "size": 87761573,
+      "sha256": "0dbb1d603855d0df08d2489adc1159e9dfde5fa550d2ce11d6c994b4409d31f4",
       "version": "0.1.0-beta",
       "commit": "bc5bc79+",
-      "updated": "2026-09-05T10:03:38Z"
+      "updated": "2026-09-05T13:53:09Z"
     },
     {
       "platform": "android",
       "label": "Android",
       "file": "LevelUpGameShop-Android.apk",
       "url": "https://github.com/LORAY-guy/levelupgameshop-builds/releases/download/latest/LevelUpGameShop-Android.apk",
-      "size": 129479068,
-      "sha256": "42def3905f1b43fde162cd6f0f7a15aa018c079c3283596cb2d7fcc22da8c487",
+      "size": 129515932,
+      "sha256": "4df11c269c6a8a3c35c440d8dfcb28dd784e3d4107b371e6ffd7cbeaf498086d",
       "version": "0.1.0-beta",
       "commit": "bc5bc79+",
-      "updated": "2026-09-05T10:03:38Z"
+      "updated": "2026-09-05T13:53:09Z"
     }
   ]
 }
