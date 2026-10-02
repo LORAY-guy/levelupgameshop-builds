@@ -2,7 +2,7 @@
   "name": "Level Up: Game Shop",
   "version": "0.1.0-beta",
   "commit": "b8aa484+",
-  "updated": "2026-10-02T22:12:00Z",
+  "updated": "2026-10-02T22:16:30Z",
   "builds": [
     {
       "platform": "windows",
@@ -46,7 +46,7 @@
       "sha256": "61ff61727863e863f33fc88463fceaa40538f7ede64aca71ac880954dfbb84e0",
       "version": "0.1.0-beta",
       "commit": "b8aa484+",
-      "updated": "2026-10-02T22:12:00Z"
+      "updated": "2026-10-02T22:16:30Z"
     }
   ]
 }
