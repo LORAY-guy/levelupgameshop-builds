@@ -2,40 +2,40 @@
   "name": "Level Up: Game Shop",
   "version": "0.1.0-beta",
   "commit": "4051d64+",
-  "updated": "2026-10-11T23:48:15Z",
+  "updated": "2026-10-12T22:04:04Z",
   "builds": [
     {
       "platform": "windows",
       "label": "Windows",
       "file": "LevelUpGameShop-Windows.zip",
       "url": "https://github.com/LORAY-guy/levelupgameshop-builds/releases/download/latest/LevelUpGameShop-Windows.zip",
-      "size": 161692007,
-      "sha256": "fcaf326dfb40d9f47a5799dba7d7a65e7b10f33a7b5b3256f16276851d5e0184",
+      "size": 162052818,
+      "sha256": "42aa48bfe7288c62ff2c8ac02bbc95f41fb469151859108cf1261f873c6b04fd",
       "version": "0.1.0-beta",
       "commit": "4051d64+",
-      "updated": "2026-10-11T23:48:15Z"
+      "updated": "2026-10-12T22:04:04Z"
     },
     {
       "platform": "linux",
       "label": "Linux",
       "file": "LevelUpGameShop-Linux.zip",
       "url": "https://github.com/LORAY-guy/levelupgameshop-builds/releases/download/latest/LevelUpGameShop-Linux.zip",
-      "size": 127639866,
-      "sha256": "69fa4b85fbe8b4b31f1ba1af8483302f6b36f204f277585abbb35756ff8abfcf",
+      "size": 128444919,
+      "sha256": "8ddecd0b413b2f3a909152559648215ec60ed87536c6b764af898a67a5c59c44",
       "version": "0.1.0-beta",
       "commit": "4051d64+",
-      "updated": "2026-10-11T23:48:15Z"
+      "updated": "2026-10-12T22:04:04Z"
     },
     {
       "platform": "android",
       "label": "Android",
       "file": "LevelUpGameShop-Android.apk",
       "url": "https://github.com/LORAY-guy/levelupgameshop-builds/releases/download/latest/LevelUpGameShop-Android.apk",
-      "size": 177133995,
-      "sha256": "97b5360938b41e3adc301076bfdf0bd00d81b57926bb422e0e30307c6e8defa6",
+      "size": 178133609,
+      "sha256": "fc757720387455c162aae94db7c53961e29a0ec7056c438722d83fdf50f63484",
       "version": "0.1.0-beta",
       "commit": "4051d64+",
-      "updated": "2026-10-11T23:48:15Z"
+      "updated": "2026-10-12T22:04:04Z"
     },
     {
       "platform": "ios",
@@ -46,7 +46,7 @@
       "sha256": "9297f08580783c677b971925026887e91d71305b901a33d817c613c3ff76ffc3",
       "version": "0.1.0-beta",
       "commit": "4051d64+",
-      "updated": "2026-10-11T23:48:15Z"
+      "updated": "2026-10-12T22:04:04Z"
     }
   ]
 }
