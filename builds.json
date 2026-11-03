@@ -1,52 +1,52 @@
 {
   "name": "Level Up: Game Shop",
   "version": "0.1.0-beta",
-  "commit": "4671d11+",
-  "updated": "2026-10-29T00:57:52Z",
+  "commit": "ef93ba6+",
+  "updated": "2026-11-03T17:47:29Z",
   "builds": [
     {
       "platform": "windows",
       "label": "Windows",
       "file": "LevelUpGameShop-Windows.zip",
       "url": "https://github.com/LORAY-guy/levelupgameshop-builds/releases/download/latest/LevelUpGameShop-Windows.zip",
-      "size": 177549687,
-      "sha256": "a25a56870454bbf2c107ee78618a8ba14aa2248cc8ffeb3d8fa5fbb43b9ae54b",
+      "size": 179074235,
+      "sha256": "2ebc1d87da2840076c70cecb4e9f8aad6556fe200cf82c691355046040b09c0a",
       "version": "0.1.0-beta",
-      "commit": "4671d11+",
-      "updated": "2026-10-29T00:57:52Z"
+      "commit": "ef93ba6+",
+      "updated": "2026-11-03T17:47:29Z"
     },
     {
       "platform": "linux",
       "label": "Linux",
       "file": "LevelUpGameShop-Linux.zip",
       "url": "https://github.com/LORAY-guy/levelupgameshop-builds/releases/download/latest/LevelUpGameShop-Linux.zip",
-      "size": 167907453,
-      "sha256": "532afcb42fdbf645fe51f5e49d934dc39bfffcacb23b4d18a0c1e4ba366ace11",
+      "size": 146721112,
+      "sha256": "fc28586340e846c07139583e70d8b861659b54a96aa20d6125af8930ff424e51",
       "version": "0.1.0-beta",
-      "commit": "4671d11+",
-      "updated": "2026-10-29T00:57:52Z"
+      "commit": "ef93ba6+",
+      "updated": "2026-11-03T17:47:29Z"
     },
     {
       "platform": "android",
       "label": "Android",
       "file": "LevelUpGameShop-Android.apk",
       "url": "https://github.com/LORAY-guy/levelupgameshop-builds/releases/download/latest/LevelUpGameShop-Android.apk",
-      "size": 220541842,
-      "sha256": "884e91009e2855d4a593bf04d050f6eb1da475ec8a95cb178c0429c891dd0163",
+      "size": 223879574,
+      "sha256": "e62a7fc0b0e656756033f3ce9d57ca1748186c7a9f21cb981bf2f4ccbea3c3e2",
       "version": "0.1.0-beta",
-      "commit": "4671d11+",
-      "updated": "2026-10-29T00:57:52Z"
+      "commit": "ef93ba6+",
+      "updated": "2026-11-03T17:47:29Z"
     },
     {
       "platform": "ios",
       "label": "iOS",
       "file": "LevelUpGameShop-iOS.ipa",
       "url": "https://github.com/LORAY-guy/levelupgameshop-builds/releases/download/latest/LevelUpGameShop-iOS.ipa",
-      "size": 62673693,
-      "sha256": "9297f08580783c677b971925026887e91d71305b901a33d817c613c3ff76ffc3",
+      "size": 130573216,
+      "sha256": "8e9b060792cb5f2079947746f91821af50d7ca48b04d6e47350957246bf90a43",
       "version": "0.1.0-beta",
-      "commit": "4051d64+",
-      "updated": "2026-10-12T22:04:04Z"
+      "commit": "ef93ba6+",
+      "updated": "2026-11-03T17:47:29Z"
     }
   ]
 }
