@@ -1,41 +1,41 @@
 {
   "name": "Level Up: Game Shop",
   "version": "0.1.0-beta",
-  "commit": "41cbf14",
-  "updated": "2026-11-15T11:01:46Z",
+  "commit": "44bf99e",
+  "updated": "2026-11-16T10:23:29Z",
   "builds": [
     {
       "platform": "windows",
       "label": "Windows",
       "file": "LevelUpGameShop-Windows.zip",
       "url": "https://github.com/LORAY-guy/levelupgameshop-builds/releases/download/latest/LevelUpGameShop-Windows.zip",
-      "size": 190664286,
-      "sha256": "38cfa6c02661086ff898d3cfd0a474e1057b9469acf3465e1700272ff4e7b3e4",
+      "size": 185991288,
+      "sha256": "e8b826c225889fe1fd94cd1325d9419e949fef33d94f8303b53d119cf3b98ee9",
       "version": "0.1.0-beta",
-      "commit": "41cbf14",
-      "updated": "2026-11-15T11:01:46Z"
+      "commit": "44bf99e",
+      "updated": "2026-11-16T10:23:29Z"
     },
     {
       "platform": "linux",
       "label": "Linux",
       "file": "LevelUpGameShop-Linux.zip",
       "url": "https://github.com/LORAY-guy/levelupgameshop-builds/releases/download/latest/LevelUpGameShop-Linux.zip",
-      "size": 159840746,
-      "sha256": "594823bba987ca6d83906a89fa73eeab89ddd5575b3f11d7f332509bddad8528",
+      "size": 155328391,
+      "sha256": "15817cdcfc0765e13d7df95ad44d81f9da6552e9ee30ef2c0988beafc02746d0",
       "version": "0.1.0-beta",
-      "commit": "41cbf14",
-      "updated": "2026-11-15T11:01:46Z"
+      "commit": "44bf99e",
+      "updated": "2026-11-16T10:23:29Z"
     },
     {
       "platform": "android",
       "label": "Android",
       "file": "LevelUpGameShop-Android.apk",
       "url": "https://github.com/LORAY-guy/levelupgameshop-builds/releases/download/latest/LevelUpGameShop-Android.apk",
-      "size": 240881047,
-      "sha256": "6fa75cec00175b2cbfd2ebad9bcd1304db1210ce0b53bb075fda50e991bf1fdf",
+      "size": 236282272,
+      "sha256": "ef3b361fcd2c1ba4b20952dd58606837427e0913b29d3acbaf31b4eee0432c6b",
       "version": "0.1.0-beta",
-      "commit": "41cbf14",
-      "updated": "2026-11-15T11:01:46Z"
+      "commit": "44bf99e",
+      "updated": "2026-11-16T10:23:29Z"
     },
     {
       "platform": "ios",
@@ -45,8 +45,8 @@
       "size": 139795993,
       "sha256": "e9754bfed6a1d2722264d4176c871f28e16b03aa02b5c8883a4c27f0e76bc6af",
       "version": "0.1.0-beta",
-      "commit": "41cbf14",
-      "updated": "2026-11-15T11:01:46Z"
+      "commit": "44bf99e",
+      "updated": "2026-11-16T10:23:29Z"
     }
   ]
 }
